@@ -1,0 +1,16 @@
+.git
+.github
+.agents
+.codex
+.lovable
+node_modules
+dist
+.output
+.nitro
+.tanstack
+*.local
+.env
+backend
+drizzle
+supabase
+README.md

@@ -77,10 +77,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "QR Payslip | Simple payroll, verified payslips" },
+      { title: "QPayslip | Simple payroll, verified payslips" },
       { name: "description", content: "Simple payroll, attendance, and verified QR payslips for small businesses." },
-      { name: "author", content: "QR Payslip" },
-      { property: "og:title", content: "QR Payslip | Simple payroll, verified payslips" },
+      { name: "author", content: "QPayslip" },
+      { property: "og:title", content: "QPayslip | Simple payroll, verified payslips" },
       { property: "og:description", content: "Simple payroll, attendance, and verified QR payslips for small businesses." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
