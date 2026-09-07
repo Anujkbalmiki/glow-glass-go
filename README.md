@@ -1,40 +1,66 @@
 # QPayslip
 
-QPayslip is an India-focused payroll workspace with a Go API, React/TanStack frontend, Supabase persistence, and QR-verified payslip workflows.
+## QR Payslip Management System — MVP
 
-The frontend requires Node.js 22.12 or newer. The backend requires Go 1.22 or newer.
+QPayslip is a mobile-first, web-based payroll and employee management system designed for small businesses such as shops, stores, restaurants, and local businesses that still rely on Excel, paper records, WhatsApp, or manual salary calculations.
 
-This project was built with [Lovable](https://lovable.dev).
+The goal is simple: provide a lightweight and easy-to-use alternative to complex HRMS platforms while keeping essential payroll and employee management workflows in one place.
 
-## Deployment
+## MVP Concept
 
-The TanStack Start frontend can be deployed directly to Vercel. Vercel detects the `tanstack-start` framework through `vercel.json`; configure the `VITE_SUPABASE_URL` and `VITE_SUPABASE_PUBLISHABLE_KEY` environment variables in the Vercel project.
+QPayslip is designed to help small businesses manage:
 
-The Go API is containerized separately and should be deployed to a container host. Set the frontend's API base URL to that service when API-backed workflows are connected.
+- Employee information
+- Daily attendance
+- Leave management
+- Salary calculations
+- Payroll processing
+- Payslip generation
+- Secure QR-based payslip verification
 
-Run both services locally with Docker:
+Employees will be able to scan a QR code on their payslip to securely view or verify their salary statement without installing a separate application.
 
-```sh
-docker compose up --build
-```
+## Telegram Integration
 
-There are currently no AI features or AI runtime dependencies in QPayslip, so no separate AI container is required.
+Future Telegram integration is planned for:
 
-## Build with Lovable
+- Salary notifications
+- Payslip delivery
+- Leave requests
+- Employee communication
+- Payroll-related updates
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/6d8357f8-b782-4baa-b8f3-7d20525913a2).
+The objective is to make employee communication simple by using tools employees already understand.
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+## Design Principles
 
-## Development
+QPayslip is being designed around a few core principles:
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+- **Mobile-first** — easy to use on smartphones
+- **Simple** — focused on essential payroll workflows
+- **Secure** — designed with secure authentication and payslip verification in mind
+- **Lightweight** — built for the practical needs of small businesses
+- **Affordable** — designed to keep initial operating costs close to zero
+- **Scalable** — structured so additional capabilities can be introduced as the product grows
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
+## AI — Future Scope
+
+AI is not part of the initial MVP.
+
+Future versions may introduce AI-powered capabilities such as:
+
+- Payroll insights
+- Anomaly detection
+- Attendance and salary analysis
+- Natural-language reporting
+- Intelligent payroll assistance
+
+The initial priority is to establish a reliable and secure payroll foundation before introducing AI capabilities.
+
+## Vision
+
+The main goal of QPayslip is **simplicity**.
+
+Instead of requiring small businesses to adopt complex HRMS platforms, QPayslip aims to provide a lightweight payroll workspace that makes employee management, attendance, salary processing, and payslip verification simple, affordable, and accessible.
+
+> **Simple payroll. Secure payslips. Built for small businesses.**
